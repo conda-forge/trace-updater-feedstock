@@ -1,5 +1,5 @@
 {% set name = "trace-updater" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/trace_updater-{{ version }}.tar.gz
-  sha256: 4e45756ca474707307be0f15772c0493a5ab8325d39bd0c72b9d79dce486f6c5
+  sha256: 73d489d86ca562a3d1fcf1571b1a038e0b46caa49f40d084010248368ce5cb84
 
 build:
   number: 0
