@@ -1,11 +1,11 @@
-About trace-updater
-===================
+About trace-updater-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/trace-updater-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/predict-idlab/trace-updater
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/trace-updater-feedstock/blob/main/LICENSE.txt)
 
 Summary: Dash component which allows to update a dcc.Graph its traces.
 
