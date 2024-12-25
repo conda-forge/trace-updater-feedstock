@@ -21,10 +21,6 @@ requirements:
     - pip
     - setuptools
   run:
-    - dash
-    - dash-core-components
-    - dash-html-components
-    - dash-table
     - python >={{ python_min }}
 
 test:
