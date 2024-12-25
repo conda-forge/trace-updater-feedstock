@@ -31,6 +31,7 @@ test:
   requires:
     - pip
     - python {{ python_min }}
+    - dash
 
 about:
   home: https://github.com/predict-idlab/trace-updater
