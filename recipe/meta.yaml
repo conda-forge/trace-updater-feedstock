@@ -7,24 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/trace_updater-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/trace_updater-{{ version }}.tar.gz
   sha256: 04960a062addf58131da39df9f5755a1d8f5fff9b5fbabd0839801e2431d9a20
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - dash
-    - dash-core-components
-    - dash-html-components
-    - dash-table
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -33,6 +30,13 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
+    - dash
+    - werkzeug <3.1
+    - flask <3.1,>=1.0.4
+    - dash-table
+    - dash-html-components
+    - dash-core-components
 
 about:
   home: https://github.com/predict-idlab/trace-updater
