@@ -32,6 +32,11 @@ test:
     - pip
     - python {{ python_min }}
     - dash
+    - werkzeug <3.1
+    - flask <3.1,>=1.0.4
+    - dash-table
+    - dash-html-components
+    - dash-core-components
 
 about:
   home: https://github.com/predict-idlab/trace-updater
